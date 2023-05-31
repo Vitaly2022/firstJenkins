@@ -62,16 +62,13 @@
       <plugins>
 
         <plugin>
-          <groupid>org.apache.tomcat.maven</groupid>
-          <artifactid>tomcat7-maven-plugin</artifactid>
-          <version>${tomcat.plugin.version}</version>
+          <groupId>org.apache.tomcat.maven</groupId>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+          <version>2.2</version>
           <configuration>
             <url>http://localhost:8081/manager/text</url>
             <server>TomcatServer</server>
-            <username>deployer</username>
-            <password>password</password>
-            <path>/client</path>
-            <update>true</update>
+            <path>/myapp</path>
           </configuration>
         </plugin>
 
